@@ -14,6 +14,7 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 /**
@@ -39,7 +40,8 @@ public class HomeControllerTest {
     public void getDefaultHomePage() throws Exception {
         this.mockMvc.perform(get("/"))
                 .andExpect(status().isOk())
-                .andExpect(forwardedUrl("/WEB-INF/views/home.jsp"));
+                .andDo(print())
+                .andExpect(view().name(Matchers.containsString("home")));
     }
 
     @Test
