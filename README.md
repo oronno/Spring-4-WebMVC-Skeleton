@@ -1,13 +1,17 @@
 # Spring 4 WebMVC Skeleton project
 
-This is a skeleton project you can just clone from github and start writing your own controller and jsp file if you gonna 
+This is a skeleton project you can just clone from github and start writing your own controller and view file if you gonna 
 develop a web application of your own.
 
-Following technology stack has been used here:
+Here, Hibernate integration with JPA (Java Persistence API) has been configured. You just have to create a database
+  in your local MySQL server and provide corresponding access information at `resources/persistence-mysql.properties` file.
+
+List of full technology stack used here:
 
 1. Spring 4.0.5.RELEASE
 2. Servlet 3.0
-3. JSP 2.2
+3. Thymeleaf 2.1.3
+3. JPA/Hibernate 4.3.5
 4. Junit 4.11
 5. spring-test 4.0.5.RELEASE (Spring MVC Test Framework)
 6. Mockito 1.9.5
