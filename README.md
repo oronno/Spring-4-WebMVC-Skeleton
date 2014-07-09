@@ -1,13 +1,17 @@
 # Spring 4 WebMVC Skeleton project
 
-This is a skeleton project you can just clone from github and start writing your own controller and jsp file if you gonna 
+This is a skeleton project you can just clone from github and start writing your own controller and view file if you gonna
 develop a web application of your own.
 
-Following technology stack has been used here:
+Here, Thymeleaf is used as view technology instead of jsp. Thymeleaf better suited for serving XHTML/HTML5 at the view layer
+of web applications with its [natural templating](http://spring.io/blog/2014/03/11/springone2gx-2013-replay-thymeleaf-improving-your-spring-view-layer-with-natural-templates) theme.
+Visit their [website](http://www.thymeleaf.org/) for more details.
+
+List of full technology stack used here:
 
 1. Spring 4.0.5.RELEASE
 2. Servlet 3.0
-3. JSP 2.2
+3. Thymeleaf 2.1.3
 4. Junit 4.11
 5. spring-test 4.0.5.RELEASE (Spring MVC Test Framework)
 6. Mockito 1.9.5
