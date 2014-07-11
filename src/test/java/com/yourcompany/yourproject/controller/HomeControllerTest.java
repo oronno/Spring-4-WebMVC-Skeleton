@@ -41,7 +41,7 @@ public class HomeControllerTest {
         this.mockMvc.perform(get("/"))
                 .andExpect(status().isOk())
                 .andDo(print())
-                .andExpect(view().name(Matchers.containsString("home")));
+                .andExpect(view().name(Matchers.containsString("index")));
     }
 
     @Test

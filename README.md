@@ -5,6 +5,14 @@ develop a web application of your own.
 
 Here, Hibernate integration with JPA (Java Persistence API) has been configured. You just have to create a database
   in your local MySQL server and provide corresponding access information at `resources/persistence-mysql.properties` file.
+  
+
+Here, Thymeleaf is used as view technology instead of jsp. Thymeleaf better suited for serving XHTML/HTML5 at the view layer
+of web applications with its [natural templating](http://spring.io/blog/2014/03/11/springone2gx-2013-replay-thymeleaf-improving-your-spring-view-layer-with-natural-templates) theme.
+Visit their [website](http://www.thymeleaf.org/) for more details.
+
+Bootstrap also has been configured. [Bootstrap](http://getbootstrap.com/) is the most popular HTML, CSS, and JS framework for developing responsive,
+mobile first projects on the web. You can find a sample designed dashboard page at http://localhost:8080/dashboard
 
 List of full technology stack used here:
 
@@ -18,6 +26,7 @@ List of full technology stack used here:
 7. Slf4j/Log4j 1.7.5
 8. Gradle 1.11
 9. Tomcat 7.0.54 (Embedded)
+10. Bootstrap 3.2.0
 
 Note: starting from Spring 3.1, you can configure Servlet Context programatically with no web.xml and no xml at all. But
 I didn't feel natural with this approach. So, I used xml based configuration approach in this project. But if you like

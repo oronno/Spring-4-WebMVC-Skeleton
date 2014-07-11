@@ -15,11 +15,11 @@
     <mvc:annotation-driven/>
 
     <!-- Maps '/' requests to the 'home' view -->
-    <mvc:view-controller path="/" view-name="home"/>
+    <mvc:view-controller path="/" view-name="index"/>
+    <mvc:view-controller path="/dashboard" view-name="dashboard"/>
 
-    <!-- Efficiently serving static resources; e.g. test.png will be access-able directly by <SERVER>/images/test.png URL -->
-    <mvc:resources mapping="/images/**" location="/img/"/>
-    <mvc:resources mapping="/css/**" location="/css/"/>
+    <!-- Efficiently serving static resources -->
+    <mvc:resources mapping="/resources/**" location="/resources/"/>
 
     <!-- **************************************************************** -->
     <!--  THYMELEAF-SPECIFIC ARTIFACTS                                    -->
