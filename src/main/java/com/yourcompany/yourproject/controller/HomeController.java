@@ -16,9 +16,13 @@ public class HomeController {
     public String firstPage(ModelMap model) {
         log.debug("at first page");
 
-        model.addAttribute("msg", "Here a greeting message for you forwarded from HomeController ;)");
+        model.addAttribute("msg", "You are in home !!");
 
         return "home";
+    }
+
+    public String sendGreetingMessage() {
+        return "Here a greeting message for you forwarded from HomeController ;)";
     }
 
 }
